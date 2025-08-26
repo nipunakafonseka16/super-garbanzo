@@ -1,0 +1,38 @@
+import { Button } from "@/components/ui/button";
+
+export default function PurposeSection() {
+  return (
+    <section className="py-16 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content */}
+          <div>
+            <h2 className="text-3xl lg:text-4xl font-light text-gray-900 mb-6">
+              The power of purpose
+            </h2>
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              Driven by our purpose, we combine our technology, people, and broader networks to
+              address society's greatest challenges.
+            </p>
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full font-semibold"
+            >
+              Find out more
+            </Button>
+          </div>
+
+          {/* Image */}
+          <div className="relative">
+            <img
+              src="https://ext.same-assets.com/1364585098/825184619.jpeg"
+              alt="Bridge with Cisco 40 anniversary logo"
+              className="rounded-lg shadow-lg w-full"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
